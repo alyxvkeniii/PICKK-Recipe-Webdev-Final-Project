@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* General body styling */
+body {
+    font-family: 'Baloo 2', cursive;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 150px;
+}
+
+/* Navigation styles */
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0 15px; /* Add horizontal spacing for consistent padding */
+}
+
+/* Ensure consistent alignment */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Hover effect adjustment */
+nav ul li:hover .button {
+    border-bottom: 2px solid #ff7979; /* Underline effect */
+    padding-bottom: 5px; /* Add space between text and underline */
+}
+
+/* Remove unnecessary right margin */
+nav ul li:nth-child(3) {
+    margin-right: 400px; /* Remove excessive margin */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem; /* Consistent font size */
+    background-color: white; /* Ensure clean background */
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Subtle hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button Style for Dropdown */
+.button {
+    padding: 10px 20px;
+    background-color: white;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem; /* Ensure consistent button font */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.button:hover {
+    background-color: white; /* Darker green on hover */
+}
+
+/* END of Navigation styles */
+
+.terms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: center;
+    width: 100%;
+}
+
+.privacy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: center;
+    width: 100%;
+}
+
+#privacy-policy-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.privacy-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: left; 
+    font-size: 16px; 
+    font-family: 'Baloo 2', sans-serif; 
+    color: #333;/
+}
+
+#privacy-policy-section h1 {
+    font-size: 24px;
+    color: #d13469;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+#privacy-policy-section h2 {
+    font-size: 24px;
+    color: #d13469;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#privacy-policy-section p, 
+#privacy-policy-section ul {
+    font-size: 16px;
+}
+
+#privacy-policy-section li {
+    margin-bottom: 10px;
+}
+
+#privacy-policy-section b {
+    font-weight: bold;
+}
+
+#terms-of-use-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.terms-container {
+    max-width: 800px; 
+    margin: 0 0; 
+    padding: 20px;
+    text-align: left; 
+    font-size: 16px; 
+    font-family: 'Baloo 2', sans-serif; 
+    color: #333; 
+}
+
+#terms-of-use-section h1 {
+    font-size: 24px;
+    color: #d13469;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+#terms-of-use-section h2 {
+    font-size: 24px;
+    color: #d13469;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#terms-of-use-section p, 
+#terms-of-use-section ul {
+    font-size: 16px;
+}
+
+#terms-of-use-section li {
+    margin-bottom: 10px;
+}
+
+#terms-of-use-section b {
+    font-weight: bold;
+}

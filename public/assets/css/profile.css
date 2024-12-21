@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* General body styling */
+.body {
+    font-family: 'Baloo 2', cursive;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* General Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 8%;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Adjust logo size */
+    margin-left: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+/* Update navigation link padding */
+nav ul li {
+    padding: 0 15px; /* Add horizontal spacing for consistent padding */
+    color: black;
+}
+
+/* Ensure consistent alignment */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Hover effect adjustment */
+nav ul li:hover .nav-btn {
+    border-bottom: 2px solid #ff7979; /* Underline effect */
+    padding-bottom: 5px; /* Add space between text and underline */
+}
+
+/* Remove unnecessary right margin */
+nav ul li:nth-child(3) {
+    margin-right: 400px; /* Remove excessive margin */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem; /* Consistent font size */
+    background-color: white; /* Ensure clean background */
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Subtle hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button Style for Dropdown */
+.nav-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color:#2C2D2D;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem; /* Ensure consistent button font */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.nav-btn:hover {
+    background-color: white; /* Darker green on hover */
+}
+
+.nav-btn1 {
+    margin-right: 100px;
+    background-color: white;
+    color:#2C2D2D;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem; /* Ensure consistent button font */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.nav-btn1:hover {
+    background-color: white; /* Darker green on hover */
+}
+
+/* END of Navigation styles */
+
+
+.header-text {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.header-faq-text h3 {
+    font-size: 2.5em;
+    color: #ff7979; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header-faq-text p {
+    font-size: 1.1em;
+    color: #777; /* Light gray color for the subtitle */
+    margin-bottom: 50px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+}
+
+.modal-footer button {
+    min-width: 100px;
+}
+
+.button0 {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button0:hover {
+    background-color: rgb(187, 88, 77);
+}
+
+.button1 {
+    background-color: salmon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+    background-color: rgb(187, 88, 77);
+}
+
+
+.button2 {
+    background-color: salmon;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+    background-color: rgb(187, 88, 77);
+}
+
+h5{
+    text-align: center;
+    padding: 10px;
+}
+
+.list-group {
+    padding: 10px;
+}

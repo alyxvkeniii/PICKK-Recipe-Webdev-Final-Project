@@ -1,0 +1,773 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* General body styling */
+body {
+    font-family: 'Baloo 2', cursive;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 150px;
+}
+
+/* Navigation styles */
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    padding: 10px;
+}
+
+nav ul li .button {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+/* Underline effect on hover */
+nav ul li:hover .button {
+    border-bottom: 2px solid #ff7979; /* Underline color */
+}
+
+/* Add margin-right to the "Help" item */
+nav ul li:nth-child(3) {
+    margin-right: 400px; /* Adjust the value as needed */
+}
+
+/* END of Navigation styles */
+
+/* Welcome section */
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    background-color: white;
+}
+
+.welcome-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    filter: brightness(40%); 
+}
+
+.button1 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #ff6f61; /* A warm, inviting color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 12px;
+    margin-bottom: 28px;
+}
+
+.button1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #ff8f7e; /* Slightly lighter shade for hover effect */
+}
+
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.info h3 {
+    color: #2d2d2d;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.headline-section {
+    text-align: center;
+}
+
+
+
+/* Text container overlay */
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.text-container h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
+/* END of Welcome section */
+
+/* About Section*/
+#about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 50px;
+    background-color: white;
+}
+
+.about-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.about-text-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #d13469;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* END of About Section*/
+
+/* Latest PICKKs Section*/
+#latestPICKK-section {
+    max-width: 8000px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+.latest-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h2 {
+    padding-left: 50px;
+    font-size: 30px;
+    color: black;
+}
+
+.title a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 14px;
+    padding-right: 160px;
+    padding-top: 50px;
+}
+.wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+
+.info h3 {
+    color: #2d2d2d;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.button2 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* END of Latest PICKKs Section*/
+
+/* Celebration PICKK section */
+#celebrate-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: white;
+}
+
+.celebrate-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.celebrate-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    filter: brightness(60%); 
+}
+
+.button2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6f61; /* A warm, inviting color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #ff8f7e; /* Slightly lighter shade for hover effect */
+}
+
+
+/* Text container overlay */
+.celeb-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.celeb-text-container h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.celeb-text-container p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
+/* END of Celebration PICKK section */
+
+/* Discover Section*/
+#discover-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 50px;
+    background-color: white;
+}
+
+.discover-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.discover-text-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.discover-text-container h2 {
+    color: #d13469;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.discover-text-container p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.button3 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #ff6f61; /* A warm, inviting color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 12px;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* END of Discover Section*/
+
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px; /* Adjust the gap between the links */
+    justify-content: center; /* Optional: To center the links horizontally */
+}
+  
+.footer-links a {
+    text-decoration: none; /* Optional: Removes underline from links */
+    color: inherit; /* Optional: Inherits text color from parent */
+}
+
+.footer-links a:hover { 
+    text-decoration: underline; 
+}
+
+/* END ofFooter styles */
+
+#privacy-policy-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.privacy-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: left; 
+    font-size: 16px; 
+    font-family: 'Baloo 2', sans-serif; 
+    color: #333;/
+}
+
+#privacy-policy-section h1, 
+#privacy-policy-section h2 {
+    font-size: 24px;
+    color: #d13469;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#privacy-policy-section p, 
+#privacy-policy-section ul {
+    font-size: 16px;
+}
+
+#privacy-policy-section li {
+    margin-bottom: 10px;
+}
+
+#privacy-policy-section b {
+    font-weight: bold;
+}
+
+#terms-of-use-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.terms-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: left; 
+    font-size: 16px; 
+    font-family: 'Baloo 2', sans-serif; 
+    color: #333; 
+}
+
+#terms-of-use-section h1, 
+#terms-of-use-section h2 {
+    font-size: 24px;
+    color: #d13469;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#terms-of-use-section p, 
+#terms-of-use-section ul {
+    font-size: 16px;
+}
+
+#terms-of-use-section li {
+    margin-bottom: 10px;
+}
+
+#terms-of-use-section b {
+    font-weight: bold;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header,
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    align-items: center;
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+.modal-body ul {
+    margin-left: 30px;
+    flex: 1;
+    justify-content: center;
+}
+
+.modal-body ul li {
+    position: relative;
+}
+
+.modal-body ol {
+    margin-left: 30px;
+    flex: 1;
+    justify-content: center;
+}
+
+.modal-body ol ul li {
+    position: relative;
+}
+
+
+  .modal-body img {
+    max-width: 40%;
+    height: 40%;
+    border-radius: 10px;
+  }
+  
+  .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .food-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.category {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ff8f7e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 38px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.category img {
+    max-width: 200%;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.category span {
+    margin-top: 20px; /* Space between image and text */
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    line-height: 1.2;
+    height: 30px;
+
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
+
+.food-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+/**/
+.card-content {
+    position: absolute; /* Position content absolutely */
+    bottom: 0; /* Align to the bottom */
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Transition for hover effect */
+}
+
+.card:hover .card-content {
+    opacity: 1; /* Show content on hover */
+}
+
+.card:hover img {
+    opacity: 0.3; /* Dim image on hover */
+}
+
+.view-recipe {
+    padding: 5px; /* Increased padding for larger buttons */
+    margin-top: 10px; /* Space above the button */
+    border: none;
+    border-radius: 20px;
+    background-color: #ff8f7e;
+    font-size: 16px; /* Font size */
+    color: white;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.view-recipe:hover {
+    background-color: #ff6f61; /* Darker shade on hover */
+}
+/**/
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #ff8f7e;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6f61;
+}
+  /**/      

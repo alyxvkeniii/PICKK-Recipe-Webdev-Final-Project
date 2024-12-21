@@ -1,0 +1,738 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* General body styling */
+body {
+    font-family: 'Baloo 2', cursive;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 150px;
+}
+
+/* Navigation styles */
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li .button {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+/* Underline effect on hover */
+nav ul li:hover .button {
+    border-bottom: 2px solid #ff7979; /* Underline color */
+}
+
+/* Add margin-right to the "Help" item */
+nav ul li:nth-child(3) {
+    margin-right: 400px; /* Adjust the value as needed */
+}
+
+/* END of Navigation styles */
+
+/* Welcome section */
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    background-color: white;
+}
+
+.welcome-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    filter: brightness(40%); 
+}
+
+.button1 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #ff6f61; /* A warm, inviting color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+.button1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #ff8f7e; /* Slightly lighter shade for hover effect */
+}
+
+.service .section-title { 
+    margin-block-end: 16px; 
+    text-align: center;
+}
+
+.service .section-text { 
+    margin-block-end: 40px; 
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.info h3 {
+    color: #2d2d2d;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Text container overlay */
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.text-container h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Container for projects section */
+#projects .projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+/* Projects container */
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/* Project item styling */
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #222; /* Dark background */
+}
+
+/* Project information section */
+#projects .project-info {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ff8f7e;
+    color: white;
+}
+
+/* Title styling */
+#projects .project-info h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #ffff;
+}
+
+/* Subtitle styling */
+#projects .project-info h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Description paragraph styling */
+#projects .project-info p {
+    color: #bbb;
+    font-size: 1rem;
+}
+
+/* Image container */
+#projects .project-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: #ff8f7e;
+}
+
+/* Overlay effect on the image */
+#projects .project-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* Image styling */
+#projects .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 0;
+}
+
+/* Image zoom effect on hover */
+#projects .project-item:hover .project-img img {
+    transform: scale(1.1);
+}
+
+/*search bar*/
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 25px; /* Rounded corners for the container */
+    overflow: hidden; /* Ensures the input and button are contained within rounded corners */
+    margin top: 12px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    border-radius: 25px 0 0 25px; /* Rounded corners */
+    width: 400px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    color: white; /* Text color */
+    transition: background-color 0.2s, border-color 0.2s; /* Smooth transition */
+}
+
+.search-input:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Background color on hover */
+    
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 1; 
+}
+
+.search-button {
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    border-radius: 0 25px 25px 0; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    color: white; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.search-button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Background color on hover */
+    color: bisque; /* Change text color on hover */
+}
+
+/* END of Welcome section */
+
+/* About Section*/
+#about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 50px;
+    background-color: white;
+}
+
+.about-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.about-text-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #d13469;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* END of About Section*/
+
+/* Latest PICKKs Section*/
+#latestPICKK-section {
+    max-width: 8000px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+.latest-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h2 {
+    padding-left: 50px;
+    font-size: 30px;
+    color: black;
+}
+
+.title a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 14px;
+    padding-right: 160px;
+    padding-top: 50px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+
+.info h3 {
+    color: #2d2d2d;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.button2 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* END of Latest PICKKs Section*/
+
+/* Celebration PICKK section */
+#celebrate-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: white;
+}
+
+.celebrate-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.celebrate-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    filter: brightness(60%); 
+}
+
+.button2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6f61; /* A warm, inviting color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #ff8f7e; /* Slightly lighter shade for hover effect */
+}
+
+
+/* Text container overlay */
+.celeb-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.celeb-text-container h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.celeb-text-container p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
+/* END of Celebration PICKK section */
+
+/* Discover Section*/
+#discover-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 50px;
+    background-color: white;
+}
+
+.discover-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.discover-text-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.discover-text-container h2 {
+    color: #d13469;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.discover-text-container p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.button3 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #ff6f61; /* A warm, inviting color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 12px;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* END of Discover Section*/
+
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px; /* Adjust the gap between the links */
+    justify-content: center; /* Optional: To center the links horizontally */
+}
+  
+.footer-links a {
+    text-decoration: none; /* Optional: Removes underline from links */
+    color: inherit; /* Optional: Inherits text color from parent */
+}
+
+.footer-links a:hover { 
+    text-decoration: underline; 
+}
+
+/* END ofFooter styles */
+
+#privacy-policy-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.privacy-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: left; 
+    font-size: 16px; 
+    font-family: 'Baloo 2', sans-serif; 
+    color: #333;/
+}
+
+#privacy-policy-section h1, 
+#privacy-policy-section h2 {
+    font-size: 24px;
+    color: #d13469;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#privacy-policy-section p, 
+#privacy-policy-section ul {
+    font-size: 16px;
+}
+
+#privacy-policy-section li {
+    margin-bottom: 10px;
+}
+
+#privacy-policy-section b {
+    font-weight: bold;
+}
+
+#terms-of-use-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.terms-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: left; 
+    font-size: 16px; 
+    font-family: 'Baloo 2', sans-serif; 
+    color: #333; 
+}
+
+#terms-of-use-section h1, 
+#terms-of-use-section h2 {
+    font-size: 24px;
+    color: #d13469;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#terms-of-use-section p, 
+#terms-of-use-section ul {
+    font-size: 16px;
+}
+
+#terms-of-use-section li {
+    margin-bottom: 10px;
+}
+
+#terms-of-use-section b {
+    font-weight: bold;
+}

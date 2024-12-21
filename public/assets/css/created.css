@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Baloo 2', cursive;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 150px;
+}
+
+/* Navigation styles */
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+/* Update navigation link padding */
+nav ul li {
+    padding: 0 15px; /* Add horizontal spacing for consistent padding */
+}
+
+/* Ensure consistent alignment */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Hover effect adjustment */
+nav ul li:hover .button {
+    border-bottom: 2px solid #ff7979; /* Underline effect */
+    padding-bottom: 5px; /* Add space between text and underline */
+}
+
+/* Remove unnecessary right margin */
+nav ul li:nth-child(3) {
+    margin-right: 400px; /* Remove excessive margin */
+}
+
+/* Responsive fix for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Add spacing between items */
+    }
+
+    nav ul li {
+        padding: 10px 0; /* Adjust vertical spacing */
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem; /* Consistent font size */
+    background-color: white; /* Ensure clean background */
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Subtle hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button Style for Dropdown */
+.button {
+    padding: 10px 20px;
+    background-color: white;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem; /* Ensure consistent button font */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.button:hover {
+    background-color: white; /* Darker green on hover */
+}
+
+/* END of Navigation styles */
+
+.container {
+    display: flex;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #ff7979;
+    padding: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ff7979;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.tabs a.active {
+    border-bottom: 2px solid #ff7979;
+    font-weight: bold;
+}
+
+.nav {
+    margin: 20px 0;
+}
+
+.nav .item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav .item.active {
+    background-color: #e7f6e7;
+    border-left: 3px solid #ff7979;
+}
+
+.nav .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #ff7979;
+}
+
+.created{
+    text-decoration: none;
+    color: black;
+}
+
+.created:hover {
+    border-bottom: 2px solid #ff7979;
+}
+
+.favorites{
+    text-decoration: none;
+    color: black;
+}
+
+.favorites:hover {
+    border-bottom: 2px solid #ff7979;
+}
+
+.create-btn {
+    background-color: #ff7979;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.create-btn:hover {
+    background-color: #ff7979;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.content .subheading {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.empty-state {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.empty-state img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.empty-state h2 {
+    font-size: 1.5rem;
+    color: #ff7979;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    background-color: #ff7979;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.explore-btn:hover {
+    background-color: #ff7979;
+}
+
+/* Dish Style */
+.food-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+/**/
+.card-content {
+    position: absolute; /* Position content absolutely */
+    bottom: 0; /* Align to the bottom */
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Transition for hover effect */
+}
+
+.card:hover .card-content {
+    opacity: 1; /* Show content on hover */
+}
+
+.card:hover img {
+    opacity: 0.3; /* Dim image on hover */
+}
+
+.view-recipe {
+    padding: 5px; /* Increased padding for larger buttons */
+    margin-top: 10px; /* Space above the button */
+    border: none;
+    border-radius: 20px;
+    background-color: #ff8f7e;
+    font-size: 16px; /* Font size */
+    color: white;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.view-recipe:hover {
+    background-color: #ff6f61; /* Darker shade on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px; /* Adjust the gap between the links */
+    justify-content: center; /* Centers the links horizontally */
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from parent */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* END of Footer styles */ 
